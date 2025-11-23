@@ -1,0 +1,57 @@
+@import "header.css";
+@import "footer.css";
+
+:root {
+    --bg: #000000;
+    --bg-secondary: #0C0C0C;
+    --primary: #ffffff;
+    --secondary: #989898;
+    --accent: #7003CA;
+    --red: #c30000;
+
+    --fs-title: 3rem;
+    --fs-section-title: 2.5rem;
+    --fs-subsection-title: 1.8rem;
+    --fs-text: 1.1rem;
+
+    --header-height: calc(var(--fs-subsection-title) + (2 * var(--fs-text)) - 1px);
+    --icon-size: calc(var(--fs-text) * 1.5);
+}
+
+a:hover {
+    color: var(--secondary);
+}
+
+@font-face {
+    font-family: "Ultrakill";
+    src: url("../fonts/ultrakill.ttf") format("truetype");
+    font-style: normal;
+}
+
+html, body {
+    image-rendering: pixelated;
+    scroll-behavior: smooth;
+    background-color: var(--bg);
+    color: var(--primary);
+    font-size: var(--fs-text);
+    font-family: "Ultrakill", sans-serif;
+    margin: 0;
+}
+
+body h1, body h2, body h3 {
+    font-weight: normal;
+}
+.main-content {
+    height: 1000px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-inline: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#contacts {
+    scroll-margin-top: var(--header-height);
+}

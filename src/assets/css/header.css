@@ -1,0 +1,27 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--fs-text) calc(var(--fs-text) * 1.5);
+    background-color: var(--bg-secondary);
+}
+
+.header__name {
+    color: var(--primary);
+    font-size: var(--fs-subsection-title);
+    text-decoration: none;
+}
+
+.header__nav {
+    display: flex;
+    gap: calc(var(--fs-text) * 1.5);
+}
+
+.header__nav a {
+    color: var(--primary);
+    font-size: var(--fs-text);
+    text-decoration: none;
+}
