@@ -5,6 +5,8 @@
     <title>FEDOROV TIMOFEY</title>
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/pages/main.css">
+
+    <script type="module" src="/dist/main.js"></script>
 </head>
 <body>
 <header class="header">
@@ -21,7 +23,11 @@
 
 <div class="main-content">
     <section id="introduction">
-        <img src="assets/img/JOKER.jpg" alt="Profile Picture" class="profile-picture">
+        <div class="profile-picture-container">
+            <img src="assets/img/JOKER.png" alt="Profile Picture" class="profile-picture">
+            <div class="profile-picture-overlay"></div>
+        </div>
+
         <h1 class="full-name">FEDOROV TIMOFEY</h1>
         <h2 class="job-title">Android Developer</h2>
         <p class="description">
@@ -48,9 +54,29 @@
                     <p>SQL (beginner)</p>
                     <p>HTML/CSS/JS (beginner)</p>
                 </div>
+                <div class="subsection">
+                    <h2 class="subsection-header">Databases</h2>
+                    <p>[Relational] ROOM (intermediate)</p>
+                    <p>[NoSQL] Firebase (beginner)</p>
+                </div>
             </div>
             <div class="column">
-                BLANK
+                <div class="subsection">
+                    <h2 class="subsection-header">Development Tools</h2>
+                    <p>ELMA365/BRIX365(advanced)</p>
+                    <p>Android Studio (intermediate)</p>
+                    <p>JetBrains IDEs (intermediate)</p>
+                    <p>Git (intermediate)</p>
+                    <p>Figma (intermediate)</p>
+                </div>
+                <div class="subsection">
+                    <h2 class="subsection-header">Soft skills</h2>
+                    <p>English C1 (according to EF SET)</p>
+                    <p>Problem-solving and Analytical thinking</p>
+                    <p>Time management and Prioritization</p>
+                    <p>Leadership</p>
+                    <p>Self-learning and Adaptability</p>
+                </div>
             </div>
         </div>
     </section>

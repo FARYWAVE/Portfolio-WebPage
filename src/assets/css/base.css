@@ -42,7 +42,6 @@ body h1, body h2, body h3 {
     font-weight: normal;
 }
 .main-content {
-    height: 1000px;
     max-width: 1100px;
     margin: 0 auto;
     padding-inline: 1rem;
@@ -51,14 +50,15 @@ body h1, body h2, body h3 {
     align-items: center;
 }
 
-#contacts {
-    scroll-margin-top: var(--header-height);
+#skills, #experience, #projects, #education, #contacts{
+    scroll-margin-top: calc(var(--header-height) * 1.2);
 }
 
 .section-2-column {
     z-index: 100;
     display: flex;
-    width: 80%;
+    width: 100%;
+    padding: 0 10% var(--fs-subsection-title);
     flex-direction: column;
     background-color: var(--bg);
     box-shadow: 0 -40px 30px var(--bg);
@@ -70,7 +70,7 @@ body h1, body h2, body h3 {
     align-items: center;
     justify-content: center;
     gap: calc(var(--fs-section-title) / 4);
-    margin-bottom: var(--fs-section-title);
+    margin-bottom: calc(var(--fs-section-title) / 2);
 }
 
 .section-heading .line-1, .section-heading .line-2 {
@@ -92,8 +92,8 @@ body h1, body h2, body h3 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 10%;
-    padding: 0 10%;
+    gap: 5%;
+    padding: 0 5%;
 }
 
 .column {
@@ -101,6 +101,8 @@ body h1, body h2, body h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: min-content;
+    gap: calc(var(--fs-subsection-title) * 1.7);
 }
 
 .subsection {
@@ -108,7 +110,10 @@ body h1, body h2, body h3 {
     flex: 1;
     display: flex;
     flex-direction: column;
+    height: min-content;
     justify-content: center;
+    padding: calc(var(--fs-subsection-title) * 1.8) var(--fs-subsection-title);
+    gap: var(--fs-text);
 }
 
 .subsection::before {
@@ -117,8 +122,8 @@ body h1, body h2, body h3 {
     top: 0;
     right: 0;
 
-    width: calc(var(--fs-subsection-title) / 1.5);
-    height: calc(var(--fs-subsection-title) / 1.5);
+    width: calc(var(--fs-subsection-title) / 1.2);
+    height: calc(var(--fs-subsection-title) / 1.2);
 
     border-top: calc(var(--fs-section-title) / 7) solid var(--accent);
     border-right: calc(var(--fs-section-title) / 7) solid var(--accent);
@@ -130,16 +135,23 @@ body h1, body h2, body h3 {
     bottom: 0;
     left: 0;
 
-    width: calc(var(--fs-subsection-title) / 1.5);
-    height: calc(var(--fs-subsection-title) / 1.5);
+    width: calc(var(--fs-subsection-title) / 1.2);
+    height: calc(var(--fs-subsection-title) / 1.2);
 
     border-bottom: calc(var(--fs-section-title) / 7) solid var(--accent);
     border-left: calc(var(--fs-section-title) / 7) solid var(--accent);
 }
 
 .subsection-header {
+    position: absolute;
+    top: calc(var(--fs-subsection-title) / 3);
+    left: calc(var(--fs-subsection-title) / 5);
     font-size: var(--fs-subsection-title);
     color: var(--accent);
     margin: 0;
     padding: 0;
+}
+
+.subsection p {
+    margin: 0;
 }
