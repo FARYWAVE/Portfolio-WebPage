@@ -6,12 +6,14 @@
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/pages/main.css">
 
-    <script type="module" src="/dist/main.js"></script>
+    <script type="module" src="/dist/base.js"></script>
 </head>
 <body>
+
 <header class="header">
     <a href="index.html" class="header__name">FARYWAVE</a>
     <nav class="header__nav">
+        <div class="highlighter"></div>
         <a href="#introduction">INTRODUCTION</a>
         <a href="#skills">SKILLS</a>
         <a href="#experience">EXPERIENCE</a>
@@ -24,7 +26,7 @@
 <div class="main-content">
     <section id="introduction">
         <div class="profile-picture-container">
-            <img src="assets/img/JOKER.png" alt="Profile Picture" class="profile-picture">
+            <img src="assets/img/JOKER.jpg" alt="Profile Picture" class="profile-picture">
             <div class="profile-picture-overlay"></div>
         </div>
 
@@ -32,7 +34,8 @@
         <h2 class="job-title">Android Developer</h2>
         <p class="description">
             I am a passionate Android developer with a strong foundation in Java and Kotlin.
-            With a keen eye for detail and a commitment to quality, I am dedicated to delivering high-quality applications that meet the needs of users.
+            With a keen eye for detail and a commitment to quality, I am dedicated to delivering high-quality
+            applications that meet the needs of users.
         </p>
     </section>
 
@@ -46,41 +49,155 @@
             <div class="column">
                 <div class="subsection">
                     <h2 class="subsection-header">Languages</h2>
-                    <p>Kotlin (intermediate)</p>
-                    <p>TypeScript (intermediate)</p>
-                    <p>Python (intermediate)</p>
-                    <p>Java (intermediate)</p>
-                    <p>C++ (beginner)</p>
-                    <p>SQL (beginner)</p>
-                    <p>HTML/CSS/JS (beginner)</p>
+                    <a>Kotlin (intermediate)</a>
+                    <a>TypeScript (intermediate)</a>
+                    <a>Python (intermediate)</a>
+                    <a>Java (intermediate)</a>
+                    <h3>C++ (beginner)</h3>
+                    <h3>SQL (beginner)</h3>
+                    <h3>HTML/CSS/JS (beginner)</h3>
                 </div>
                 <div class="subsection">
                     <h2 class="subsection-header">Databases</h2>
-                    <p>[Relational] ROOM (intermediate)</p>
-                    <p>[NoSQL] Firebase (beginner)</p>
+                    <a>[Relational] ROOM (intermediate)</a>
+                    <a>[NoSQL] Firebase (beginner)</a>
                 </div>
             </div>
             <div class="column">
                 <div class="subsection">
                     <h2 class="subsection-header">Development Tools</h2>
-                    <p>ELMA365/BRIX365(advanced)</p>
-                    <p>Android Studio (intermediate)</p>
-                    <p>JetBrains IDEs (intermediate)</p>
-                    <p>Git (intermediate)</p>
-                    <p>Figma (intermediate)</p>
+                    <a>ELMA365/BRIX365(advanced)</a>
+                    <a>Android Studio (intermediate)</a>
+                    <a>JetBrains IDEs (intermediate)</a>
+                    <h3>Git (intermediate)</h3>
+                    <h3>Figma (intermediate)</h3>
                 </div>
                 <div class="subsection">
                     <h2 class="subsection-header">Soft skills</h2>
-                    <p>English C1 (according to EF SET)</p>
-                    <p>Problem-solving and Analytical thinking</p>
-                    <p>Time management and Prioritization</p>
-                    <p>Leadership</p>
-                    <p>Self-learning and Adaptability</p>
+                    <h3>English C1 (according to EF SET)</h3>
+                    <h3>Problem-solving and Analytical thinking</h3>
+                    <h3>Time management and Prioritization</h3>
+                    <h3>Leadership</h3>
+                    <h3>Self-learning and Adaptability</h3>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="section-1-column" id="experience">
+        <div class="section-heading">
+            <span class="line-1"></span>
+            <span class="heading-text">EXPERIENCE</span>
+            <span class="line-2"></span>
+        </div>
+        <div class="column">
+            <a class="subsection clickable">
+                <h2 class="subsection-header">SBER Mobile</h2>
+                <h3>Information Systems Support Engineer (apprentice)</h3>
+                <p>June 2025 up until now</p>
+            </a>
+            <div class="subsection">
+                <h2 class="subsection-header">Freelance</h2>
+                <h3>Telegram Bots development</h3>
+                <p>September-November 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-2-column" id="projects">
+        <div class="section-heading">
+            <span class="line-1"></span>
+            <span class="heading-text">PROJECTS</span>
+            <span class="line-2"></span>
+        </div>
+        <div class="section-columns">
+            <div class="column">
+                <div class="subsection clickable">
+                    <h2 class="subsection-header">OmniCalc</h2>
+                    <h3>
+                        Multifunctional calculator made using Jetpack Compose. Capabilities:
+                        Complicated expressions with multiple layers
+                        Variables
+                        Formulas storage
+                        Downloadable packages
+                        Unit converter
+                        UI customisation
+                    </h3>
+                </div>
+                <div class="subsection clickable">
+                    <h2 class="subsection-header">Java 3D Game</h2>
+                    <h3>
+                        First person game written in java running on swing. Game renders 3D graphics using only CPU power. No rendering libraries used.
+                    </h3>
+                </div>
+                <div class="subsection clickable long-header">
+                    <h2 class="subsection-header">AI Desktop Companion</h2>
+                    <h3>
+                        Written in Kotlin, app uses Swing for UI and Ollama to run local LLM. Simple and convenient AI tool.
+                    </h3>
+                </div>
+            </div>
+            <div class="column">
+                <div class="subsection clickable long-header">
+                    <h2 class="subsection-header">GigaChat integration</h2>
+                    <h3>
+                        Integration of GigaChat into ELMA365 for automatic document analysis
+                    </h3>
+                </div>
+                <div class="subsection clickable long-header">
+                    <h2 class="subsection-header">Airsoft<br>Community App</h2>
+                    <h3>
+                        Application created with PyQt5 aimed to simplify organization of Airsoft games. Includes player/organizer profile, creation of a team and game.
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-1-column" id="education">
+        <div class="section-heading">
+            <span class="line-1"></span>
+            <span class="heading-text">EDUCATION</span>
+            <span class="line-2"></span>
+        </div>
+        <div class="column">
+            <a class="subsection clickable">
+                <h2 class="subsection-header">Higher Education</h2>
+                <h3>RTU MIREA (Bachelor)</h3>
+                <p>Russian Technological University – Moscow Institute of Radio Engineering, Electronics and Automation.</p>
+                <p>Specialization: Software Engineering - Development and Design of Computer Games and Multimedia Applications</p>
+            </a>
+            <div class="subsection">
+                <h2 class="subsection-header">Additional courses</h2>
+                <a>
+                    <h3>Samsung Innovation Campus</h3>
+                    <p>Full-time Android development course. Honors degree</p>
+                </a>
+
+                <a>
+                    <h3>JavaRush</h3>
+                    <p>Online Java course. Java Syntax Zero and Java Core modules completed</p>
+                </a>
+
+                <a>
+                    <h3>Yandex Lyceum</h3>
+                    <p>Full-time python course. Introduces PyQt5, sqlite3, Telegram API and PyGame</p>
+                </a>
+            </div>
+            <div class="subsection">
+                <h2 class="subsection-header">Achievements</h2>
+                <a>
+                    <h3>Unified State Exam</h3>
+                    <p>271 points in total including 97 points in specialized mathematics</p>
+                </a>
+
+                <a>
+                    <h3>Winner of the “Engineers of the Future” conference</h3>
+                    <p>Won with “Airsoft Community Application” project</p>
+                </a>
+            </div>
+        </div>
+    </section>
 </div>
 
 

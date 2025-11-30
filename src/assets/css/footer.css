@@ -1,9 +1,11 @@
 footer {
     position: relative;
     background: var(--bg-secondary);
-    padding: calc(var(--fs-subsection-title) / 1.5);
+    padding: calc(var(--fs-subsection-title) / 1.5) calc(var(--fs-subsection-title) / 1.5) calc(var(--fs-subsection-title) * 1.5);
+    margin-top: calc(var(--header-height) * 0.8);
     text-align: center;
     z-index: 1000;
+
 }
 
 .footer-row.footer-heading {
