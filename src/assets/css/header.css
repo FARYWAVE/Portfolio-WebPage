@@ -15,13 +15,19 @@
     text-decoration: none;
 }
 
-.header__nav {
+.nav-bar {
     display: flex;
     gap: calc(var(--fs-text) * 1.5);
 }
 
-.header__nav a {
+.nav-bar a {
     color: var(--primary);
     font-size: var(--fs-text);
     text-decoration: none;
+}
+
+@media(max-width: 800px) {
+    .nav-bar {
+        display: none;
+    }
 }

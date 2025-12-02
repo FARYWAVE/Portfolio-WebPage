@@ -14,10 +14,9 @@
     --fs-subsection-title: 1.8rem;
     --fs-text: 1.1rem;
 
-    --header-height: calc(var(--fs-subsection-title) + (2 * var(--fs-text)) - 1px);
+    --header-height: 0px;
     --main-content-height: 0px;
     --footer-height: 0px;
-    --snake-width: 10px;
     --icon-size: calc(var(--fs-text) * 1.5);
 }
 
@@ -50,7 +49,7 @@ body h1, body h2, body h3, body a {
     font-weight: normal;
 }
 
-.highlighter {
+.bar-highlighter {
     position: absolute;
     align-self: center;
     left: 0;
@@ -67,6 +66,7 @@ body h1, body h2, body h3, body a {
     height: fit-content;
     margin: 0 auto;
     padding-inline: 1rem;
+    padding-bottom: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,8 +74,12 @@ body h1, body h2, body h3, body a {
     top: calc(var(--footer-height) - var(--main-content-height) + var(--header-height) * 2);
 }
 
-#skills, #experience, #projects, #education, #contacts{
+#skills, #experience, #projects, #education {
     scroll-margin-top: calc(var(--header-height) * 1.2);
+}
+
+#contacts {
+    scroll-margin-top: calc(var(--header-height) * 0.95);
 }
 
 .section-1-column, .section-2-column {
@@ -177,6 +181,7 @@ body h1, body h2, body h3, body a {
 }
 
 .subsection-header {
+    width: 80%;
     position: absolute;
     top: calc(var(--fs-subsection-title) / 3);
     left: calc(var(--fs-subsection-title) / 5);
@@ -197,4 +202,35 @@ body h1, body h2, body h3, body a {
 
 .clickable:hover {
     color: var(--primary);
+}
+
+@media (max-width: 1000px) {
+    :root {
+        --fs-title: 2.5rem;
+        --fs-section-title: 1.9rem;
+        --fs-subsection-title: 1.3rem;
+        --fs-text: 1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .section-2-column .section-columns {
+        flex-direction: column;
+        gap: calc(var(--fs-subsection-title) * 1.7);
+    }
+
+    .section-1-column, .section-2-column, .column, .section-columns {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .long-header {
+        padding-top: calc(var(--fs-subsection-title) * 1.8);
+    }
+}
+
+@media (max-width: 370px) {
+    .long-header {
+        padding-top: calc(var(--fs-subsection-title) * 2.8);
+    }
 }

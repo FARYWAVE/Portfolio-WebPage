@@ -33,11 +33,12 @@
 
 .profile-picture-container {
     position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
     top: var(--header-height);
     height: calc(100vh - var(--header-height));
-    width: fit-content;
+    max-width: 100vw;
     z-index: 0;
     overflow: hidden;
 }
@@ -45,6 +46,7 @@
 .profile-picture {
     position: relative;
     height: 100%;
+    align-self: center;
 }
 
 .profile-picture-overlay {
@@ -58,3 +60,20 @@
     transition: opacity 0.05s linear;
 }
 
+@media (max-width: 1000px) {
+    #introduction .description {
+        width: 70vw;
+    }
+
+    .profile-picture {
+        position: absolute;
+        right: -10%;
+    }
+}
+
+@media (max-width: 650px) {
+    .profile-picture {
+        position: absolute;
+        right: -30%;
+    }
+}

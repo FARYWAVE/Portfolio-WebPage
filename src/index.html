@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FEDOROV TIMOFEY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fedorov Timofey</title>
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/pages/main.css">
 
@@ -12,8 +13,9 @@
 
 <header class="header">
     <a href="index.html" class="header__name">FARYWAVE</a>
-    <nav class="header__nav">
-        <div class="highlighter"></div>
+
+    <nav class="nav-bar">
+        <div class="bar-highlighter"></div>
         <a href="#introduction">INTRODUCTION</a>
         <a href="#skills">SKILLS</a>
         <a href="#experience">EXPERIENCE</a>
@@ -23,19 +25,18 @@
     </nav>
 </header>
 
+<div class="profile-picture-container">
+    <img src="assets/img/JOKER.png" alt="Profile Picture" class="profile-picture">
+    <canvas class="profile-picture-overlay" id="overlay"></canvas>
+</div>
+
 <div class="main-content">
     <section id="introduction">
-        <div class="profile-picture-container">
-            <img src="assets/img/JOKER.jpg" alt="Profile Picture" class="profile-picture">
-            <div class="profile-picture-overlay"></div>
-        </div>
-
         <h1 class="full-name">FEDOROV TIMOFEY</h1>
         <h2 class="job-title">Android Developer</h2>
         <p class="description">
             I am a passionate Android developer with a strong foundation in Java and Kotlin.
-            With a keen eye for detail and a commitment to quality, I am dedicated to delivering high-quality
-            applications that meet the needs of users.
+            With a keen eye for detail and a commitment to quality
         </p>
     </section>
 
@@ -64,7 +65,7 @@
                 </div>
             </div>
             <div class="column">
-                <div class="subsection">
+                <div class="subsection long-header">
                     <h2 class="subsection-header">Development Tools</h2>
                     <a>ELMA365/BRIX365(advanced)</a>
                     <a>Android Studio (intermediate)</a>
@@ -145,7 +146,7 @@
                     </h3>
                 </div>
                 <div class="subsection clickable long-header">
-                    <h2 class="subsection-header">Airsoft<br>Community App</h2>
+                    <h2 class="subsection-header">Airsoft Community App</h2>
                     <h3>
                         Application created with PyQt5 aimed to simplify organization of Airsoft games. Includes player/organizer profile, creation of a team and game.
                     </h3>

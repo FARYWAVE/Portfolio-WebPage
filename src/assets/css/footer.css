@@ -1,4 +1,7 @@
 footer {
+    align-content: start;
+    max-height: calc(100vh - var(--header-height));
+    height: var(--footer-height);
     position: relative;
     background: var(--bg-secondary);
     padding: calc(var(--fs-subsection-title) / 1.5) calc(var(--fs-subsection-title) / 1.5) calc(var(--fs-subsection-title) * 1.5);
@@ -34,6 +37,7 @@ footer {
     margin-bottom: calc(var(--fs-text) * 5);
     justify-content: center;
 }
+
 
 .footer-content .column {
     flex: 1;
@@ -74,4 +78,16 @@ footer {
 .footer-row.copyright {
     color: var(--secondary);
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    .footer-row.footer-content {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: none;
+        width: min-content;
+        justify-self: center;
+        align-self: center;
+        gap: calc(var(--fs-text) * 2);
+    }
 }

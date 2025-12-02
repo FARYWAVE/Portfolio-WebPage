@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     enablePfpFade();
+    enablePfpVignette();
     calculateMainContentHeight();
-    calculateFooterHeight();
+    calculateHeaderHeight();
     enableNavHighlight();
 });
 
@@ -25,6 +26,25 @@ function enablePfpFade() {
     handleScroll();
 }
 
+function enablePfpVignette() {
+    const canvas = document.getElementById("overlay") as HTMLCanvasElement;
+    const ctx = canvas.getContext("2d");
+    if (ctx) {
+        const w = canvas.width;
+        const h = canvas.height;
+        const grd = ctx.createRadialGradient(
+            w / 2, h / 2, 0,
+            w / 2, h / 2, Math.max(w, h)
+        );
+
+        grd.addColorStop(0, "rgba(0,0,0,0)");
+        grd.addColorStop(1, "rgba(0,0,0,1)");
+
+        ctx.fillStyle = grd;
+        ctx.fillRect(0, 0, w, h);
+    }
+}
+
 
 function calculateMainContentHeight() {
     const mainContent = document.querySelector('.main-content') as HTMLElement;
@@ -39,22 +59,24 @@ function calculateMainContentHeight() {
     new ResizeObserver(updateMainContentHeight).observe(mainContent);
 }
 
-function calculateFooterHeight() {
-    const footer = document.querySelector('footer') as HTMLElement;
+function calculateHeaderHeight() {
+    const header = document.querySelector('.header') as HTMLElement;
 
-    function updateFooterHeight() {
-        const h = footer.getBoundingClientRect().height;
-        document.documentElement.style.setProperty('--footer-height', `${h}px`);
+    function updateHeaderHeight() {
+        const h = header.getBoundingClientRect().height;
+        document.documentElement.style.setProperty('--header-height', `${h}px`);
+        document.documentElement.style.setProperty("--footer-height", `calc(100vh - ${h * 1.85}px)`)
     }
 
-    updateFooterHeight();
+    updateHeaderHeight();
 
-    new ResizeObserver(updateFooterHeight).observe(footer);
+    new ResizeObserver(updateHeaderHeight).observe(header);
 }
 
+
 function enableNavHighlight() {
-    const navLinks = document.querySelectorAll<HTMLAnchorElement>('.header__nav a');
-    const highlight = document.querySelector<HTMLDivElement>('.highlighter');
+    const navLinks = document.querySelectorAll<HTMLAnchorElement>('.nav-bar a');
+    const highlight = document.querySelector<HTMLDivElement>('.bar-highlighter');
     const sections = [
         ...document.querySelectorAll<HTMLElement>('section'),
         document.querySelector<HTMLElement>('footer')!
@@ -94,7 +116,7 @@ function enableNavHighlight() {
 
         if (currentSection) {
             const link = document.querySelector<HTMLAnchorElement>(
-                `.header__nav a[href="#${currentSection.id}"]`
+                `.nav-bar a[href="#${currentSection.id}"]`
             );
             if (link) moveHighlight(link);
         }
