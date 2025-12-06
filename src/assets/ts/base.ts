@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     enableNavHighlight();
     enableBurgerMenu();
     localize();
+    correctSubsectionPadding();
 });
 
 function calculateMainContentHeight() {
@@ -44,8 +45,10 @@ function enableNavHighlight() {
         } else {
             const offsetTop = link.offsetTop;
             const offsetHeight = link.offsetHeight;
+            const multiplier = navigator.language.includes("ru") ? 11 : 16;
+            //const multiplier = 11;
 
-            highlight!.style.top = offsetTop - fs * 17 + "px";
+            highlight!.style.top = offsetTop - fs * multiplier + "px";
             highlight!.style.left = "0";
             highlight!.style.width = "100%";
             highlight!.style.height = offsetHeight + fs * 4 + "px";
@@ -103,6 +106,21 @@ function enableBurgerMenu() {
     });
 }
 
+function correctSubsectionPadding() {
+    const subsections = document.querySelectorAll<HTMLElement>('.subsection');
+
+    requestAnimationFrame(() => {
+        subsections.forEach(subsection => {
+            const title = subsection.querySelector<HTMLElement>('.subsection-header');
+            if (!title) return;
+
+            const titleHeight = title.getBoundingClientRect().height;
+            const remToPx = parseFloat(getComputedStyle(document.documentElement).fontSize);
+            subsection.style.paddingTop = `${titleHeight + 1.5 * remToPx}px`;
+        });
+    });
+}
+
 function localize() {
     const originalFonts = {
         '--fs-title': '3rem',
@@ -111,14 +129,14 @@ function localize() {
         '--fs-text': '1.1rem'
     };
 
-    const scale = 0.9;
+    const scale = 0.85;
     const root = document.documentElement;
 
     const fullPath = window.location.pathname;
     const fileName = fullPath.substring(fullPath.lastIndexOf('/') + 1);
     const page = fileName.substring(0, fileName.lastIndexOf('.')).replace("index", "main");
 
-    const lang = "en";
+    const lang = navigator.language.includes("ru") ? "ru" : "en";
 
     // @ts-ignore
     if (lang === "ru") {
@@ -131,10 +149,6 @@ function localize() {
                 const unit = match[2];
                 root.style.setProperty(varName, `${size * scale}${unit}`);
             }
-        });
-    } else {
-        Object.entries(originalFonts).forEach(([varName, value]) => {
-            root.style.setProperty(varName, value);
         });
     }
 

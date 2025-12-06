@@ -183,7 +183,7 @@ body h1, body h2, body h3, body a {
     flex-direction: column;
     height: min-content;
     justify-content: center;
-    padding: calc(var(--fs-subsection-title) * 1.8) var(--fs-subsection-title);
+    padding: calc(var(--fs-subsection-title) * 2) var(--fs-subsection-title);
     gap: var(--fs-text);
 }
 
@@ -196,10 +196,6 @@ body h1, body h2, body h3, body a {
 .subsection div {
     display: flex;
     flex-direction: column;
-}
-
-.long-header {
-    padding-top: 5rem;
 }
 
 .subsection::before {
@@ -267,10 +263,7 @@ body h1, body h2, body h3, body a {
 
 @media (max-width: 1000px) {
     :root {
-        --fs-title: 2.5rem;
-        --fs-section-title: 1.9rem;
-        --fs-subsection-title: 1.3rem;
-        --fs-text: 1rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -278,23 +271,24 @@ body h1, body h2, body h3, body a {
     html::-webkit-scrollbar {
         display: none;
     }
-    .section-2-column .section-columns {
+    .section-columns {
         flex-direction: column;
         gap: calc(var(--fs-subsection-title) * 1.7);
     }
 
-    .section-1-column, .section-2-column, .column, .section-columns {
+    .section-1-column, .section-2-column {
+        width: 90%;
+    }
+
+
+    .section-1-column, .section-2-column, .column, .section-columns, .main-content {
         padding-right: 0;
         padding-left: 0;
     }
 
-    .long-header {
-        padding-top: calc(var(--fs-subsection-title) * 1.8);
-    }
-}
-
-@media (max-width: 370px) {
-    .long-header {
-        padding-top: calc(var(--fs-subsection-title) * 2.8);
+    .section-1-column .column {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
     }
 }
