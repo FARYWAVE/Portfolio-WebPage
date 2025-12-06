@@ -1,9 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
-    calculateMainContentHeight();
     enableNavHighlight();
     enableBurgerMenu();
     localize();
-    correctSubsectionPadding();
+
+    window.addEventListener('load', () => {
+        requestAnimationFrame(correctSubsectionPadding);
+        calculateMainContentHeight();
+    });
+
+    window.addEventListener('resize', () => {
+        requestAnimationFrame(correctSubsectionPadding);
+        calculateMainContentHeight();
+    });
 });
 
 function calculateMainContentHeight() {
