@@ -14,10 +14,52 @@
     --fs-subsection-title: 1.8rem;
     --fs-text: 1.1rem;
 
-    --header-height: 0px;
+    --header-height: calc(var(--icon-size) * 2.5);
     --main-content-height: 0px;
-    --footer-height: 0px;
+    --footer-height: calc(100vh - var(--header-height) * 2);
     --icon-size: calc(var(--fs-text) * 1.5);
+}
+
+html::-webkit-scrollbar {
+    width: 1.3vw;
+    min-width: 12px;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--bg);
+    cursor: url('../img/cursor2inactive.png') 14 14, auto;
+    border-left: var(--bg-secondary) solid 3px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--bg-secondary);
+    border: var(--primary) solid 3px;
+    cursor: url('../img/cursor2.png') 14 14, auto;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    border: var(--accent) solid 3px;
+    cursor: url('../img/cursor2.png') 14 14, auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+    cursor: url('../img/cursor2.png') 14 14, auto;
+}
+
+a:hover {
+    cursor: url('../img/cursor2.png') 14 14, auto;
+}
+
+button, button * {
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: url('../img/cursor2.png') 14 14, auto;
+}
+
+button:hover, button:hover * {
+    cursor: url('../img/cursor2.png') 14 14, auto;
 }
 
 a:hover {
@@ -43,21 +85,11 @@ html {
 body {
     margin: 0;
     padding: 0;
+    cursor: url('../img/cursor2inactive.png') 14 14, auto;
 }
 
 body h1, body h2, body h3, body a {
     font-weight: normal;
-}
-
-.bar-highlighter {
-    position: absolute;
-    align-self: center;
-    left: 0;
-    height: calc(var(--fs-text) * 2);
-    background: var(--accent);
-    transition: all 0.3s ease;
-    z-index: -1;
-    width: 20px;
 }
 
 .main-content {
@@ -72,10 +104,6 @@ body h1, body h2, body h3, body a {
     align-items: center;
     position: sticky;
     top: calc(var(--footer-height) - var(--main-content-height) + var(--header-height) * 2);
-}
-
-#skills, #experience, #projects, #education {
-    scroll-margin-top: calc(var(--header-height) * 1.2);
 }
 
 #contacts {
@@ -131,6 +159,9 @@ body h1, body h2, body h3, body a {
     gap: calc(var(--fs-subsection-title) * 1.7);
 }
 
+.column .section-columns {
+    padding: 0;
+}
 .section-1-column .column {
     padding: 0 5%;
 }
@@ -146,8 +177,15 @@ body h1, body h2, body h3, body a {
     gap: var(--fs-text);
 }
 
-.subsection a h3 {
+
+
+.subsection a h3, .subsection div h3 {
     padding-bottom: calc(var(--fs-text) / 5);
+}
+
+.subsection div {
+    display: flex;
+    flex-direction: column;
 }
 
 .long-header {
@@ -178,6 +216,19 @@ body h1, body h2, body h3, body a {
 
     border-bottom: calc(var(--fs-section-title) / 7) solid var(--accent);
     border-left: calc(var(--fs-section-title) / 7) solid var(--accent);
+}
+
+.subsection::before,
+.subsection::after {
+    transition: transform 0.3s ease;
+}
+
+.subsection:hover::before {
+    transform: translate(6px, -6px);
+}
+
+.subsection:hover::after {
+    transform: translate(-6px, 6px);
 }
 
 .subsection-header {
@@ -214,6 +265,9 @@ body h1, body h2, body h3, body a {
 }
 
 @media (max-width: 800px) {
+    html::-webkit-scrollbar {
+        display: none;
+    }
     .section-2-column .section-columns {
         flex-direction: column;
         gap: calc(var(--fs-subsection-title) * 1.7);

@@ -7,7 +7,7 @@ footer {
     padding: calc(var(--fs-subsection-title) / 1.5) calc(var(--fs-subsection-title) / 1.5) calc(var(--fs-subsection-title) * 1.5);
     margin-top: calc(var(--header-height) * 0.8);
     text-align: center;
-    z-index: 1000;
+    z-index: 998;
 
 }
 

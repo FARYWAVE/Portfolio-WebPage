@@ -1,11 +1,3 @@
-.main-content {
-    top: calc(var(--footer-height) - var(--main-content-height) + var(--header-height) * 2);
-}
-
-#skills, #experience, #projects, #education {
-    scroll-margin-top: calc(var(--header-height) * 1.2);
-}
-
 #introduction {
     align-self: start;
     scroll-margin-top: 500px;
@@ -39,7 +31,7 @@
     padding-bottom: calc(var(--fs-title) * 2);
 }
 
-.profile-picture-container {
+.image-container {
     position: fixed;
     display: flex;
     justify-content: center;
@@ -51,13 +43,19 @@
     overflow: hidden;
 }
 
-.profile-picture {
+#link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.image {
     position: relative;
     height: 100%;
     align-self: center;
 }
 
-.profile-picture-overlay {
+.image-overlay {
     position: absolute;
     inset: 0;
     height: 100%;
@@ -68,20 +66,6 @@
     transition: opacity 0.05s linear;
 }
 
-@media (max-width: 1000px) {
-    #introduction .description {
-        width: 70vw;
-    }
-
-    .profile-picture {
-        position: absolute;
-        right: -10%;
-    }
-}
-
-@media (max-width: 500px) {
-    .profile-picture {
-        position: absolute;
-        left: -90%
-    }
+.section-columns {
+    padding: var(--fs-subsection-title) 0;
 }

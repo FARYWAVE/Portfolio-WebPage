@@ -1,0 +1,66 @@
+{
+  "omnicalc": {
+    "title": "OmniCalc",
+    "subtitle_en": "Multifunctional Calculator",
+    "subtitle_ru": "Многофункциональный Калькулятор",
+    "description_en": "A multifunctional calculator built with Jetpack Compose. It supports complex expressions, custom variables, a built-in formula library, downloadable feature packages, a flexible unit converter, and full UI customization. Designed as a modern, fast, and modular tool for both everyday calculations and more advanced tasks.",
+    "description_ru": "Многофункциональный калькулятор, созданный на Jetpack Compose. Поддерживает сложные выражения, пользовательские переменные, встроенную библиотеку формул, загружаемые пакеты функций, удобный конвертер единиц и гибкую настройку интерфейса. Разработан как современный, быстрый и модульный инструмент для повседневных и продвинутых вычислений.",
+    "languages": ["Kotlin"],
+    "tools": ["Android Studio", "IntelliJ IDEA", "Firebase"],
+    "libs": ["Coroutines", "Room", "Firebase", "Jetpack Compose", "Navigation API"],
+    "github": "https://github.com/FARYWAVE/OmniCalc",
+    "image": "assets/img/omnicalc.jpg"
+  },
+
+  "java3d": {
+    "title": "Java 3D Game",
+    "subtitle_en": "First-Person Game",
+    "subtitle_ru": "Игра от первого лица",
+    "description_en": "A first-person experimental game written entirely in Java using Swing. The project renders 3D scenes on the CPU without relying on any external rendering frameworks. It implements its own projection, ray-casting logic, collision checks, and a simple game loop, demonstrating how low-level rendering works under the hood.",
+    "description_ru": "Экспериментальная игра от первого лица, полностью написанная на Java с использованием Swing. Проект рендерит 3D-сцены на процессоре без сторонних графических библиотек. Реализованы собственная проекция, система лучевого рендеринга, проверки столкновений и простой игровой цикл, демонстрирующие основы низкоуровневой графики.",
+    "languages": ["Java"],
+    "libs": ["Swing"],
+    "tools": ["IntelliJ IDEA"],
+    "github": "https://github.com/FARYWAVE/Java3DGame",
+    "image": "assets/img/javagame.png"
+  },
+
+  "ai_desktop": {
+    "title": "AI Desktop Companion",
+    "subtitle_en": "Desktop Application",
+    "subtitle_ru": "Приложение",
+    "description_en": "A lightweight Kotlin desktop application that uses Swing and Ollama to run a local large language model. Designed as a simple, fast and convenient personal AI tool with minimal dependencies, offering on-device privacy and customizable behavior.",
+    "description_ru": "Лёгкое десктопное приложение на Kotlin, использующее Swing и Ollama для запуска локальной модели. Создано как простой, быстрый и удобный персональный AI-ассистент с минимальными зависимостями, локальной приватностью и возможностью настройки поведения.",
+    "languages": ["Kotlin"],
+    "libs": ["Ollama", "OkHttp3", "Swing"],
+    "tools": ["IntelliJ IDEA"],
+    "github": "https://github.com/FARYWAVE/AiDesktopCompanion",
+    "image": "assets/img/ai_companion.png"
+  },
+
+  "gigachat_integration": {
+    "title": "GigaChat Integration for ELMA365",
+    "subtitle_en": "AI-Powered Document Analysis",
+    "subtitle_ru": "ИИ анализ документов",
+    "description_en": "A practical integration of GigaChat into the ELMA365 platform, enabling automated document analysis workflows. The solution handles requests to the GigaChat API, processes responses, and embeds AI-powered text interpretation into business processes.",
+    "description_ru": "Практическая интеграция GigaChat в платформу ELMA365, обеспечивающая автоматизированные сценарии анализа документов. Решение обрабатывает запросы к API GigaChat, интерпретирует ответы и внедряет AI-функции в бизнес-процессы.",
+    "languages": ["TypeScript"],
+    "libs": [],
+    "tools": ["GigaChat API", "ELMA365 SDK"],
+    "github": null,
+    "image": "assets/img/gigachat.png"
+  },
+
+  "airsoft_app": {
+    "title": "Airsoft Community App",
+    "subtitle_en": "Desktop Application",
+    "subtitle_ru": "Приложение",
+    "description_en": "A PyQt5 desktop application created to streamline the organization of airsoft events. Includes player and organizer profiles, team creation tools, event scheduling, and game management features. Focused on being a practical utility for small communities and club-level coordination.",
+    "description_ru": "Десктопное приложение на PyQt5, созданное для упрощения организации страйкбольных мероприятий. Включает профили игроков и организаторов, инструменты для создания команд, планирования событий и управления играми. Ориентировано на практичное применение в небольших сообществах и клубах.",
+    "languages": ["Python"],
+    "libs": ["PyQt5", "SQLite3"],
+    "tools": ["SQLite Studio"],
+    "github": "https://github.com/FARYWAVE/Airsoft-Community-Application",
+    "image": "assets/img/aca.png"
+  }
+}
