@@ -1,0 +1,76 @@
+{
+  "header.name": "FARYWAVE",
+  "nav.introduction": "INTRODUCTION",
+  "nav.skills": "SKILLS",
+  "nav.experience": "EXPERIENCE",
+  "nav.projects": "PROJECTS",
+  "nav.education": "EDUCATION",
+  "nav.contacts": "CONTACTS",
+
+  "menu.closed": "Menu Closed",
+  "menu.opened": "Menu Opened",
+  "profile.picture": "Profile Picture",
+
+  "intro.name": "FEDOROV TIMOFEY",
+  "intro.title": "Android Developer",
+  "intro.description": "I’m an Android developer focused on building reliable products with modern technologies.",
+
+  "skills.kotlin": "Kotlin (intermediate)",
+  "skills.typescript": "TypeScript (intermediate)",
+  "skills.python": "Python (intermediate)",
+  "skills.java": "Java (intermediate)",
+  "skills.cpp": "C++ (beginner)",
+  "skills.sql": "SQL (beginner)",
+  "skills.web": "HTML/CSS/JS (beginner)",
+
+  "skills.databases": "Databases",
+  "skills.room": "ROOM (intermediate)",
+  "skills.firestore": "Firebase Firestore (beginner)",
+
+  "skills.devtools": "Development Tools",
+  "skills.elma": "ELMA365/BRIX365 (advanced)",
+  "skills.androidstudio": "Android Studio (intermediate)",
+  "skills.jetbrains": "JetBrains IDEs (intermediate)",
+  "skills.git": "Git (intermediate)",
+  "skills.figma": "Figma (intermediate)",
+
+  "skills.soft": "Soft skills",
+  "skills.english": "English C1 (according to EF SET)",
+  "skills.problem": "Problem-solving and Analytical thinking",
+  "skills.time": "Time management and Prioritization",
+  "skills.leadership": "Leadership",
+  "skills.selflearning": "Self-learning and Adaptability",
+
+  "experience.title": "EXPERIENCE",
+  "experience.sber.role": "Information Systems Support Engineer (apprentice)",
+  "experience.sber.time": "June 2025 — Present",
+  "experience.freelance.role": "Telegram Bot Development",
+  "experience.freelance.time": "September – November 2024",
+
+  "projects.title": "PROJECTS",
+  "projects.omnicalc.desc": "A multifunctional calculator built with Jetpack Compose. Features include: complex expressions, variables, formula storage, downloadable packages, unit converter, and UI customization",
+  "projects.java3d.desc": "A first-person game written in Java using Swing. Renders 3D graphics on CPU only, without external rendering libraries",
+  "projects.gigachat.desc": "Integrated GigaChat into ELMA365 for automated document analysis",
+  "projects.airsoft.desc": "A PyQt5 application designed to streamline the organization of airsoft games. Includes player and organizer profiles, team creation and game management",
+  "projects.desktop.desc": "A lightweight Kotlin desktop app using Swing and Ollama to run a local LLM. Designed as a simple and convenient personal AI tool",
+
+  "education.title": "EDUCATION",
+  "education.higher": "Higher Education",
+  "education.university": "RTU MIREA (Bachelor, in progress)",
+  "education.desc1": "Russian Technological University – Moscow Institute of Radio Engineering, Electronics and Automation.",
+  "education.desc2": "Specialization: Software Engineering, Development and Design of Computer Games and Multimedia Applications",
+  "education.graduation": "Expected graduation: 2028",
+
+  "education.additional": "Additional courses",
+  "education.sic": "Full-time Android development course. Graduated with honors",
+  "education.javarush": "Java Syntax Zero and Java Core modules completed",
+  "education.lyceum": "Full-time Python course covering PyQt5, sqlite3, Telegram API and PyGame.",
+
+  "education.achievements": "Achievements",
+  "education.use": "Unified State Exam",
+  "education.use.points": "271 total points, including 97 in advanced mathematics",
+  "education.engineers": "Medalist of the “Engineers of the Future” conference",
+  "education.engineers.desc": "Won with “Airsoft Community Application” project",
+  "education.megapolis": "Medalist of the “Intellectual Megapolis. Potential” competition",
+  "education.megapolis.desc": "Python programming competition"
+}

@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     calculateMainContentHeight();
     enableNavHighlight();
     enableBurgerMenu();
+    localize();
 });
 
 function calculateMainContentHeight() {
@@ -100,4 +101,51 @@ function enableBurgerMenu() {
 
         menu.classList.toggle('open');
     });
+}
+
+function localize() {
+    const originalFonts = {
+        '--fs-title': '3rem',
+        '--fs-section-title': '2.5rem',
+        '--fs-subsection-title': '1.8rem',
+        '--fs-text': '1.1rem'
+    };
+
+    const scale = 0.9;
+    const root = document.documentElement;
+
+    const fullPath = window.location.pathname;
+    const fileName = fullPath.substring(fullPath.lastIndexOf('/') + 1);
+    const page = fileName.substring(0, fileName.lastIndexOf('.')).replace("index", "main");
+
+    const lang = "en";
+
+    // @ts-ignore
+    if (lang === "ru") {
+        document.body.style.fontFamily = "UltraRu";
+
+        Object.entries(originalFonts).forEach(([varName, value]) => {
+            const match = value.match(/^([\d.]+)(rem|px)$/);
+            if (match) {
+                const size = parseFloat(match[1]);
+                const unit = match[2];
+                root.style.setProperty(varName, `${size * scale}${unit}`);
+            }
+        });
+    } else {
+        Object.entries(originalFonts).forEach(([varName, value]) => {
+            root.style.setProperty(varName, value);
+        });
+    }
+
+    const jsonName = `${page}_${lang}.json`;
+
+    const json = fetch(`./assets/localization/${jsonName}`)
+        .then(res => res.json())
+        .then(data => {
+            for (let line of Object.keys(data)) {
+                const element = document.getElementById(line);
+                if (element) element.textContent = data[line];
+            }
+        });
 }

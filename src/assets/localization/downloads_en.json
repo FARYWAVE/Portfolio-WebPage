@@ -1,0 +1,25 @@
+{
+  "site-name": "FARYWAVE",
+  "nav-education": "EDUCATION",
+  "nav-achievements": "ACHIEVEMENTS",
+  "nav-other": "OTHER",
+  "nav-contacts": "CONTACTS",
+
+  "heading-education": "EDUCATION",
+  "edu-courses-title": "Additional Courses",
+  "edu-course-1": "Samsung Innovation Campus Diploma",
+  "edu-course-1-intl": "-International Standard",
+  "edu-course-1-ru": "-Russian Standard",
+
+  "heading-achievements": "ACHIEVEMENTS",
+  "ach-conf-title": "Conferences",
+  "ach-conf-1": "Engineers of the Future",
+  "ach-contests-title": "Contests",
+  "ach-contest-1": "Intellectual Megapolis. Potential",
+
+  "heading-other": "OTHER",
+  "other-resume-title": "Resume",
+  "other-resume-link": "Russian Standard",
+  "other-english-title": "English",
+  "other-english-link": "EF SET C1 Certificate"
+}

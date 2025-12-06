@@ -82,6 +82,6 @@
 @media (max-width: 500px) {
     .profile-picture {
         position: absolute;
-        left: -90%
+        right: -50%;
     }
 }

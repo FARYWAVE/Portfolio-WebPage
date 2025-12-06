@@ -1,0 +1,78 @@
+{
+  "header.name": "FARYWAVE",
+  "nav.introduction": "ВВЕДЕНИЕ",
+  "nav.skills": "НАВЫКИ",
+  "nav.experience": "ОПЫТ",
+  "nav.projects": "ПРОЕКТЫ",
+  "nav.education": "ОБРАЗОВАНИЕ",
+  "nav.contacts": "КОНТАКТЫ",
+
+  "menu.closed": "Меню закрыто",
+  "menu.opened": "Меню открыто",
+  "profile.picture": "Фотография профиля",
+
+  "intro.name": "ФЕДОРОВ ТИМОФЕЙ",
+  "intro.title": "Android-разработчик",
+  "intro.description": "Занимаюсь Android-разработкой и создаю надёжные продукты используя современные технологии",
+
+  "skills.title": "НАВЫКИ",
+  "skills.languages": "Языки",
+  "skills.kotlin": "Kotlin (средний уровень)",
+  "skills.typescript": "TypeScript (средний уровень)",
+  "skills.python": "Python (средний уровень)",
+  "skills.java": "Java (средний уровень)",
+  "skills.cpp": "C++ (начальный уровень)",
+  "skills.sql": "SQL (начальный уровень)",
+  "skills.web": "HTML/CSS/JS (начальный уровень)",
+
+  "skills.databases": "Базы данных",
+  "skills.room": "ROOM (средний уровень)",
+  "skills.firestore": "Firebase Firestore (начальный уровень)",
+
+  "skills.devtools": "Инструменты разработки",
+  "skills.elma": "ELMA365/BRIX365 (продвинутый уровень)",
+  "skills.androidstudio": "Android Studio (средний уровень)",
+  "skills.jetbrains": "JetBrains IDE (средний уровень)",
+  "skills.git": "Git (средний уровень)",
+  "skills.figma": "Figma (средний уровень)",
+
+  "skills.soft": "Гибкие навыки",
+  "skills.english": "Английский C1 (по EF SET)",
+  "skills.problem": "Аналитическое мышление и решение проблем",
+  "skills.time": "Тайм-менеджмент и приоритизация",
+  "skills.leadership": "Лидерство",
+  "skills.selflearning": "Самостоятельное обучение и адаптивность",
+
+  "experience.title": "ОПЫТ",
+  "experience.sber.role": "Инженер  по сопровождению информационных систем (стажёр)",
+  "experience.sber.time": "Июнь 2025 — настоящее время",
+  "experience.freelance.role": "Разработка Telegram-ботов",
+  "experience.freelance.time": "Сентябрь – Ноябрь 2024",
+
+  "projects.title": "ПРОЕКТЫ",
+  "projects.omnicalc.desc": "Многофункциональный калькулятор на Jetpack Compose: сложные выражения, переменные, хранилище формул, загружаемые пакеты, конвертер единиц и кастомизация интерфейса",
+  "projects.java3d.desc": "Игра от первого лица на Java и Swing, рендерящая 3D-графику только на CPU без внешних библиотек",
+  "projects.gigachat.desc": "Интеграция GigaChat в ELMA365 для автоматизированного анализа документов",
+  "projects.airsoft.desc": "Приложение на PyQt5 для организации страйкбольных игр: профили игроков и организаторов, команды, управление событиями",
+  "projects.desktop.desc": "Лёгкое Kotlin-приложение на Swing и Ollama для локального запуска LLM, созданное как удобный персональный AI-инструмент",
+
+  "education.title": "ОБРАЗОВАНИЕ",
+  "education.higher": "Высшее образование",
+  "education.university": "РТУ МИРЭА (бакалавриат, обучение продолжается)",
+  "education.desc1": "Московский государственный университет информационных технологий, радиотехники и электроники",
+  "education.desc2": "Направление: Программная инженерия, разработка и дизайн компьютерных игр и мультимедийных приложений",
+  "education.graduation": "Ожидаемый год окончания: 2028",
+
+  "education.additional": "Дополнительные курсы",
+  "education.sic": "Очный курс по Android-разработке. Окончен с отличием",
+  "education.javarush": "Завершены модули Java Syntax Zero и Java Core",
+  "education.lyceum": "Очный курс Python: PyQt5, SQLite3, Telegram API и PyGame",
+
+  "education.achievements": "Достижения",
+  "education.use": "ЕГЭ",
+  "education.use.points": "271 балл, включая 97 по профильной математике",
+  "education.engineers": "Призёр конференции «Инженеры будущего»",
+  "education.engineers.desc": "Проект «Airsoft Community Application»",
+  "education.megapolis": "Призёр конкурса «Интеллектуальный мегаполис. Потенциал»",
+  "education.megapolis.desc": "Олимпиада по программированию на Python"
+}

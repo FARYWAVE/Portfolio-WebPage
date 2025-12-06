@@ -1,0 +1,25 @@
+{
+  "site-name": "FARYWAVE",
+  "nav-education": "ОБРАЗОВАНИЕ",
+  "nav-achievements": "ДОСТИЖЕНИЯ",
+  "nav-other": "ДРУГОЕ",
+  "nav-contacts": "КОНТАКТЫ",
+
+  "heading-education": "ОБРАЗОВАНИЕ",
+  "edu-courses-title": "Дополнительные курсы",
+  "edu-course-1": "Диплом Samsung Innovation Campus",
+  "edu-course-1-intl": "-Международный стандарт",
+  "edu-course-1-ru": "-Российский стандарт",
+
+  "heading-achievements": "ДОСТИЖЕНИЯ",
+  "ach-conf-title": "Конференции",
+  "ach-conf-1": "Инженеры будущего",
+  "ach-contests-title": "Конкурсы",
+  "ach-contest-1": "Интеллектуальный Мегаполис. Потенциал",
+
+  "heading-other": "ДРУГОЕ",
+  "other-resume-title": "Резюме",
+  "other-resume-link": "Российский стандарт",
+  "other-english-title": "Английский",
+  "other-english-link": "Сертификат EF SET C1"
+}

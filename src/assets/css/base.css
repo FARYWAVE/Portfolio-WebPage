@@ -7,6 +7,8 @@
     --primary: #ffffff;
     --secondary: #989898;
     --accent: #7003CA;
+    --anchor: #757575;
+    --anchor-hover: #c179fd;
     --red: #c30000;
 
     --fs-title: 3rem;
@@ -46,10 +48,16 @@ a {
     text-decoration: none;
     color: var(--primary);
     cursor: url('../img/cursor2.png') 14 14, auto;
+    text-shadow: 2px 2px 2px var(--anchor);
+}
+
+a p, a h2 {
+    text-shadow: none;
 }
 
 a:hover {
     cursor: url('../img/cursor2.png') 14 14, auto;
+    color: var(--secondary);
 }
 
 button, button * {
@@ -62,13 +70,15 @@ button:hover, button:hover * {
     cursor: url('../img/cursor2.png') 14 14, auto;
 }
 
-a:hover {
-    color: var(--secondary);
-}
-
 @font-face {
     font-family: "Ultrakill";
     src: url("../fonts/ultrakill.ttf") format("truetype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "UltraRu";
+    src: url("../fonts/rus_pixel.ttf") format("truetype");
     font-style: normal;
 }
 
@@ -189,7 +199,7 @@ body h1, body h2, body h3, body a {
 }
 
 .long-header {
-    padding-top: calc(var(--fs-subsection-title) * 2.8)
+    padding-top: 5rem;
 }
 
 .subsection::before {

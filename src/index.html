@@ -16,34 +16,34 @@
 <body>
 
 <header class="header">
-    <a href="index.html" class="header__name">FARYWAVE</a>
+    <a href="index.html" class="header__name" id="header.name">FARYWAVE</a>
 
     <nav class="nav-bar" id="nav-bar">
         <div class="bar-highlighter"></div>
-        <a href="#introduction">INTRODUCTION</a>
-        <a href="#skills">SKILLS</a>
-        <a href="#experience">EXPERIENCE</a>
-        <a href="#projects">PROJECTS</a>
-        <a href="#education">EDUCATION</a>
-        <a href="#contacts">CONTACTS</a>
+        <a href="#introduction" id="nav.introduction">INTRODUCTION</a>
+        <a href="#skills" id="nav.skills">SKILLS</a>
+        <a href="#experience" id="nav.experience">EXPERIENCE</a>
+        <a href="#projects" id="nav.projects">PROJECTS</a>
+        <a href="#education" id="nav.education">EDUCATION</a>
+        <a href="#contacts" id="nav.contacts">CONTACTS</a>
     </nav>
 
     <button id="burger-toggle">
-        <img src="assets/img/BURGER.png" alt="Menu Closed" class="icon active" id="icon-burger">
-        <img src="assets/img/ARROW_UP.png" alt="Menu Opened" class="icon" id="icon-cross">
+        <img src="assets/img/BURGER.png" alt="Menu Closed" class="icon active" id="icon-burger" id-alt="menu.closed">
+        <img src="assets/img/ARROW_UP.png" alt="Menu Opened" class="icon" id="icon-cross" id-alt="menu.opened">
     </button>
 </header>
 
 <div class="profile-picture-container">
-    <img src="assets/img/JOKER.png" alt="Profile Picture" class="profile-picture">
+    <img src="assets/img/JOKER.png" alt="Profile Picture" class="profile-picture" id-alt="profile.picture">
     <canvas class="profile-picture-overlay" id="overlay"></canvas>
 </div>
 
 <div class="main-content">
     <section id="introduction">
-        <h1 class="full-name">FEDOROV TIMOFEY</h1>
-        <h2 class="job-title">Android Developer</h2>
-        <p class="description">
+        <h1 class="full-name" id="intro.name">FEDOROV TIMOFEY</h1>
+        <h2 class="job-title" id="intro.title">Android Developer</h2>
+        <p class="description" id="intro.description">
             I’m an Android developer focused on building reliable products with modern technologies.
         </p>
     </section>
@@ -51,64 +51,75 @@
     <section class="section-2-column" id="skills">
         <div class="section-heading">
             <span class="line-1"></span>
-            <span class="heading-text">SKILLS</span>
+            <span class="heading-text" id="skills.title">SKILLS</span>
             <span class="line-2"></span>
         </div>
         <div class="section-columns">
             <div class="column">
                 <div class="subsection">
-                    <h2 class="subsection-header">Languages</h2>
-                    <a href="languages.html#kotlin">Kotlin (intermediate)</a>
-                    <a href="languages.html#typescript">TypeScript (intermediate)</a>
-                    <a href="languages.html#python">Python (intermediate)</a>
-                    <a href="languages.html#java">Java (intermediate)</a>
-                    <h3>C++ (beginner)</h3>
-                    <h3>SQL (beginner)</h3>
-                    <h3>HTML/CSS/JS (beginner)</h3>
+                    <h2 class="subsection-header" id="skills.languages">Languages</h2>
+
+                    <a href="languages.html#kotlin" id="skills.kotlin">Kotlin (intermediate)</a>
+                    <a href="languages.html#typescript" id="skills.typescript">TypeScript (intermediate)</a>
+                    <a href="languages.html#python" id="skills.python">Python (intermediate)</a>
+                    <a href="languages.html#java" id="skills.java">Java (intermediate)</a>
+
+                    <h3 id="skills.cpp">C++ (beginner)</h3>
+                    <h3 id="skills.sql">SQL (beginner)</h3>
+                    <h3 id="skills.web">HTML/CSS/JS (beginner)</h3>
                 </div>
+
                 <div class="subsection">
-                    <h2 class="subsection-header">Databases</h2>
-                    <h3>ROOM (intermediate)</h3>
-                    <h3>Firebase Firestore (beginner)</h3>
+                    <h2 class="subsection-header" id="skills.databases">Databases</h2>
+                    <h3 id="skills.room">ROOM (intermediate)</h3>
+                    <h3 id="skills.firestore">Firebase Firestore (beginner)</h3>
                 </div>
             </div>
+
             <div class="column">
                 <div class="subsection long-header">
-                    <h2 class="subsection-header">Development Tools</h2>
-                    <h3>ELMA365/BRIX365 (advanced)</h3>
-                    <h3>Android Studio (intermediate)</h3>
-                    <h3>JetBrains IDEs (intermediate)</h3>
-                    <h3>Git (intermediate)</h3>
-                    <h3>Figma (intermediate)</h3>
+                    <h2 class="subsection-header" id="skills.devtools">Development Tools</h2>
+                    <h3 id="skills.elma">ELMA365/BRIX365 (advanced)</h3>
+                    <h3 id="skills.androidstudio">Android Studio (intermediate)</h3>
+                    <h3 id="skills.jetbrains">JetBrains IDEs (intermediate)</h3>
+                    <h3 id="skills.git">Git (intermediate)</h3>
+                    <h3 id="skills.figma">Figma (intermediate)</h3>
                 </div>
+
                 <div class="subsection">
-                    <h2 class="subsection-header">Soft skills</h2>
-                    <a href="downloads.html#other">English C1 (according to EF SET)</a>
-                    <h3>Problem-solving and Analytical thinking</h3>
-                    <h3>Time management and Prioritization</h3>
-                    <h3>Leadership</h3>
-                    <h3>Self-learning and Adaptability</h3>
+                    <h2 class="subsection-header" id="skills.soft">Soft skills</h2>
+
+                    <a href="downloads.html#other" id="skills.english">English C1 (according to EF SET)</a>
+
+                    <h3 id="skills.problem">Problem-solving and Analytical thinking</h3>
+                    <h3 id="skills.time">Time management and Prioritization</h3>
+                    <h3 id="skills.leadership">Leadership</h3>
+                    <h3 id="skills.selflearning">Self-learning and Adaptability</h3>
                 </div>
             </div>
         </div>
     </section>
 
+
     <section class="section-1-column" id="experience">
         <div class="section-heading">
             <span class="line-1"></span>
-            <span class="heading-text">EXPERIENCE</span>
+            <span class="heading-text" id="experience.title">EXPERIENCE</span>
             <span class="line-2"></span>
         </div>
+
         <div class="column">
+
             <a class="subsection" href="enterprises.html#sber-mobile">
                 <h2 class="subsection-header">SBER Mobile</h2>
-                <h3>Information Systems Support Engineer (apprentice)</h3>
-                <p>June 2025 — Present</p>
+                <h3 id="experience.sber.role">Information Systems Support Engineer (apprentice)</h3>
+                <p id="experience.sber.time">June 2025 — Present</p>
             </a>
+
             <div class="subsection">
                 <h2 class="subsection-header">Freelance</h2>
-                <h3>Telegram Bot Development</h3>
-                <p>September – November 2024</p>
+                <h3 id="experience.freelance.role">Telegram Bot Development</h3>
+                <p id="experience.freelance.time">September – November 2024</p>
             </div>
         </div>
     </section>
@@ -116,47 +127,56 @@
     <section class="section-2-column" id="projects">
         <div class="section-heading">
             <span class="line-1"></span>
-            <span class="heading-text">PROJECTS</span>
+            <span class="heading-text" id="projects.title">PROJECTS</span>
             <span class="line-2"></span>
         </div>
+
         <div class="section-columns">
             <div class="column">
+
                 <a class="subsection" href="project.html?id=omnicalc">
                     <h2 class="subsection-header">OmniCalc</h2>
-                    <h3>
-                            A multifunctional calculator built with Jetpack Compose.
-                            Features include: complex expressions, variables, formula storage, downloadable packages, unit
-                            converter, and UI customization
+                    <h3 id="projects.omnicalc.desc">
+                        A multifunctional calculator built with Jetpack Compose. Features include: complex expressions,
+                        variables, formula storage, downloadable packages, unit converter, and UI customization
                     </h3>
                 </a>
+
                 <a class="subsection" href="project.html?id=java3d">
                     <h2 class="subsection-header">Java 3D Game</h2>
-                    <h3>
-                        A first-person game written in Java using Swing.
-                        Renders 3D graphics on CPU only, without external rendering libraries
+                    <h3 id="projects.java3d.desc">
+                        A first-person game written in Java using Swing. Renders 3D graphics on CPU only, without
+                        external rendering libraries
                     </h3>
                 </a>
+
             </div>
+
             <div class="column">
+
                 <a class="subsection long-header" href="project.html?id=gigachat_integration">
                     <h2 class="subsection-header">GigaChat integration</h2>
-                    <h3>
+                    <h3 id="projects.gigachat.desc">
                         Integrated GigaChat into ELMA365 for automated document analysis
                     </h3>
                 </a>
+
                 <a class="subsection long-header" href="project.html?id=airsoft_app">
                     <h2 class="subsection-header">Airsoft Community App</h2>
-                    <h3>
-                        A PyQt5 application designed to streamline the organization of airsoft games.
-                        Includes player and organizer profiles, team creation and game management
+                    <h3 id="projects.airsoft.desc">
+                        A PyQt5 application designed to streamline the organization of airsoft games. Includes player
+                        and organizer profiles, team creation and game management
                     </h3>
-                    <a class="subsection long-header" href="project.html?id=ai_desktop">
-                        <h2 class="subsection-header">AI Desktop Companion</h2>
-                        <h3>
-                            A lightweight Kotlin desktop app using Swing and Ollama to run a local LLM.
-                            Designed as a simple and convenient personal AI tool
-                        </h3>
-                    </a>
+                </a>
+
+                <a class="subsection long-header" href="project.html?id=ai_desktop">
+                    <h2 class="subsection-header">AI Desktop Companion</h2>
+                    <h3 id="projects.desktop.desc">
+                        A lightweight Kotlin desktop app using Swing and Ollama to run a local LLM. Designed as a simple
+                        and convenient personal AI tool
+                    </h3>
+                </a>
+
             </div>
         </div>
     </section>
@@ -164,57 +184,76 @@
     <section class="section-1-column" id="education">
         <div class="section-heading">
             <span class="line-1"></span>
-            <span class="heading-text">EDUCATION</span>
+            <span class="heading-text" id="education.title">EDUCATION</span>
             <span class="line-2"></span>
         </div>
+
         <div class="column">
             <a class="subsection" href="enterprises.html#rtu-mirea">
-                <h2 class="subsection-header">Higher Education</h2>
-                <h3>RTU MIREA (Bachelor, in progress)</h3>
-                <p>Russian Technological University – Moscow Institute of Radio Engineering, Electronics and
-                    Automation.</p>
-                <p>Specialization: Software Engineering, Development and Design of Computer Games and Multimedia
-                    Applications</p>
-                <p>Expected graduation: 2028</p>
+                <h2 class="subsection-header" id="education.higher">Higher Education</h2>
+
+                <h3 id="education.university">RTU MIREA (Bachelor, in progress)</h3>
+
+                <p id="education.desc1">
+                    Russian Technological University – Moscow Institute of Radio Engineering, Electronics and Automation.
+                </p>
+
+                <p id="education.desc2">
+                    Specialization: Software Engineering, Development and Design of Computer Games and Multimedia
+                    Applications
+                </p>
+
+                <p id="education.graduation">Expected graduation: 2028</p>
             </a>
+
             <div class="subsection">
-                <h2 class="subsection-header">Additional courses</h2>
+                <h2 class="subsection-header" id="education.additional">Additional courses</h2>
+
                 <a href="downloads.html#education">
                     <h3>Samsung Innovation Campus</h3>
-                    <p>Full-time Android development course. Graduated with honors</p>
+                    <p id="education.sic">
+                        Full-time Android development course. Graduated with honors
+                    </p>
                 </a>
 
                 <div>
                     <h3>JavaRush</h3>
-                    <p>Java Syntax Zero and Java Core modules completed</p>
+                    <p id="education.javarush">Java Syntax Zero and Java Core modules completed</p>
                 </div>
 
-                <a href="https://lms.yandex.ru/certificate/check/?certNumber=230244924&lastName=%D0%A4%D1%91%D0%B4%D0%BE%D1%80%D0%BE%D0%B2" target="_blank">
+                <a href="#" target="_blank">
                     <h3>Yandex Lyceum</h3>
-                    <p>Full-time Python course covering PyQt5, sqlite3, Telegram API and PyGame.</p>
+                    <p id="education.lyceum">
+                        Full-time Python course covering PyQt5, sqlite3, Telegram API and PyGame.
+                    </p>
                 </a>
             </div>
+
             <div class="subsection">
-                <h2 class="subsection-header">Achievements</h2>
+                <h2 class="subsection-header" id="education.achievements">Achievements</h2>
+
                 <div>
-                    <h3>Unified State Exam</h3>
-                    <p>271 total points, including 97 in advanced mathematics</p>
+                    <h3 id="education.use">Unified State Exam</h3>
+                    <p id="education.use.points">
+                        271 total points, including 97 in advanced mathematics
+                    </p>
                 </div>
 
                 <a href="downloads.html#achievements">
-                    <h3>Medalist of the “Engineers of the Future” conference</h3>
-                    <p>Won with “Airsoft Community Application” project</p>
+                    <h3 id="education.engineers">Medalist of the “Engineers of the Future” conference</h3>
+                    <p id="education.engineers.desc">
+                        Won with “Airsoft Community Application” project
+                    </p>
                 </a>
 
                 <a href="downloads.html#achievements">
-                    <h3>Medalist of the “Intellectual Megapolis. Potential” competition</h3>
-                    <p>Python programming competition</p>
+                    <h3 id="education.megapolis">Medalist of the “Intellectual Megapolis. Potential” competition</h3>
+                    <p id="education.megapolis.desc">Python programming competition</p>
                 </a>
             </div>
         </div>
     </section>
 </div>
-
 
 <footer id="contacts">
     <div class="footer-row footer-heading">

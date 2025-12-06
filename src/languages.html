@@ -15,15 +15,15 @@
 <body>
 
 <header class="header">
-    <a href="index.html" class="header__name">FARYWAVE</a>
+    <a href="index.html" class="header__name" id="site-name">FARYWAVE</a>
 
     <nav class="nav-bar" id="nav-bar">
         <div class="bar-highlighter"></div>
-        <a href="#kotlin">KOTLIN</a>
-        <a href="#typescript">TYPESCRIPT</a>
-        <a href="#python">PYTHON</a>
-        <a href="#java">JAVA</a>
-        <a href="#contacts">CONTACTS</a>
+        <a href="#kotlin" id="nav-kotlin">KOTLIN</a>
+        <a href="#typescript" id="nav-typescript">TYPESCRIPT</a>
+        <a href="#python" id="nav-python">PYTHON</a>
+        <a href="#java" id="nav-java">JAVA</a>
+        <a href="#contacts" id="nav-contacts">CONTACTS</a>
     </nav>
 
     <button id="burger-toggle">
@@ -32,18 +32,17 @@
     </button>
 </header>
 
-
 <div class="main-content">
     <section class="section-1-column" id="kotlin">
         <div class="section-heading">
             <span class="line-1"></span>
-            <span class="heading-text">KOTLIN</span>
+            <span class="heading-text" id="heading-kotlin">KOTLIN</span>
             <span class="line-2"></span>
         </div>
         <div class="column">
             <div class="subsection">
-                <h2 class="subsection-header">About</h2>
-                <h3>
+                <h2 class="subsection-header" id="kotlin-about-title">About</h2>
+                <h3 id="kotlin-about-text">
                     Kotlin is a modern, statically-typed, general-purpose programming language developed by JetBrains
                     that is fully interoperable with Java. It is widely used for Android development, server-side
                     applications (including with frameworks like Ktor and Spring Boot), and for cross-platform
@@ -54,58 +53,46 @@
             </div>
             <div class="section-columns">
                 <div class="subsection">
-                    <h2 class="subsection-header">Experience</h2>
-                    <div>
-                        <h3>Coroutines</h3>
-                    </div>
-                    <div>
-                        <h3>Jetpack Compose</h3>
-                    </div>
-                    <div>
-                        <h3>Navigation API</h3>
-                    </div>
-                    <div>
-                        <h3>Room</h3>
-                    </div>
-
-                    <div>
-                        <h3>Firebase</h3>
-                    </div>
+                    <h2 class="subsection-header" id="kotlin-exp-title">Experience</h2>
+                    <div><h3 id="kotlin-exp-1">Coroutines</h3></div>
+                    <div><h3 id="kotlin-exp-2">Jetpack Compose</h3></div>
+                    <div><h3 id="kotlin-exp-3">Navigation API</h3></div>
+                    <div><h3 id="kotlin-exp-4">Room</h3></div>
+                    <div><h3 id="kotlin-exp-5">Firebase</h3></div>
                 </div>
                 <div class="subsection">
-                    <h2 class="subsection-header">Projects</h2>
+                    <h2 class="subsection-header" id="kotlin-proj-title">Projects</h2>
 
                     <a href="project.html?id=omnicalc">
-                        <h3>OmniCalc</h3>
-                        <p>
+                        <h3 id="kotlin-proj-omnicalc">OmniCalc</h3>
+                        <p id="kotlin-proj-omnicalc-text">
                             A multifunctional calculator built with Jetpack Compose.
                             Features include: complex expressions, variables, formula storage, downloadable packages,
                             unit converter, and UI customization
                         </p>
                     </a>
                     <a>
-                        <h3>AI Desktop Companion</h3>
-                        <p>
+                        <h3 id="kotlin-proj-ai">AI Desktop Companion</h3>
+                        <p id="kotlin-proj-ai-text">
                             A lightweight Kotlin desktop app using Swing and Ollama to run a local LLM. Designed as a
                             simple and convenient personal AI tool
                         </p>
                     </a>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section class="section-1-column" id="typescript">
         <div class="section-heading">
             <span class="line-1"></span>
-            <span class="heading-text">TYPESCRIPT</span>
+            <span class="heading-text" id="heading-typescript">TYPESCRIPT</span>
             <span class="line-2"></span>
         </div>
         <div class="column">
             <div class="subsection">
-                <h2 class="subsection-header">About</h2>
-                <h3>
+                <h2 class="subsection-header" id="typescript-about-title">About</h2>
+                <h3 id="typescript-about-text">
                     TypeScript is a high-level programming language that adds static typing with optional type
                     annotations to JavaScript. It is designed for developing large applications. It transpiles to
                     JavaScript. It is developed by Microsoft as free and open-source software released under an Apache
@@ -114,16 +101,14 @@
             </div>
             <div class="section-columns">
                 <div class="subsection">
-                    <h2 class="subsection-header">Experience</h2>
-                    <div>
-                        <h3>ELMA365/BRIX365 SDK</h3>
-                    </div>
+                    <h2 class="subsection-header" id="typescript-exp-title">Experience</h2>
+                    <div><h3 id="typescript-exp-1">ELMA365/BRIX365 SDK</h3></div>
                 </div>
                 <div class="subsection">
-                    <h2 class="subsection-header">Projects</h2>
+                    <h2 class="subsection-header" id="typescript-proj-title">Projects</h2>
                     <a href="project.html?id=gigachat_integration">
-                        <h3>GigaChat Integration</h3>
-                        <p>
+                        <h3 id="typescript-proj-giga">GigaChat Integration</h3>
+                        <p id="typescript-proj-giga-text">
                             Integrated GigaChat into ELMA365 for automated document analysis
                         </p>
                     </a>
@@ -135,13 +120,13 @@
     <section class="section-1-column" id="python">
         <div class="section-heading">
             <span class="line-1"></span>
-            <span class="heading-text">PYTHON</span>
+            <span class="heading-text" id="heading-python">PYTHON</span>
             <span class="line-2"></span>
         </div>
         <div class="column">
             <div class="subsection">
-                <h2 class="subsection-header">About</h2>
-                <h3>
+                <h2 class="subsection-header" id="python-about-title">About</h2>
+                <h3 id="python-about-text">
                     Python is a widely used, high-level, general-purpose programming language known for its clear,
                     readable syntax that emphasizes the use of significant indentation. It is popular for both beginners
                     and experts due to its versatility and large ecosystem of libraries and frameworks
@@ -149,28 +134,20 @@
             </div>
             <div class="section-columns">
                 <div class="subsection">
-                    <h2 class="subsection-header">Experience</h2>
-                    <div>
-                        <h3>SQLite3</h3>
-                    </div>
-                    <div>
-                        <h3>PyQt5</h3>
-                    </div>
-                    <div>
-                        <h3>Telegram API</h3>
-                    </div>
+                    <h2 class="subsection-header" id="python-exp-title">Experience</h2>
+                    <div><h3 id="python-exp-1">SQLite3</h3></div>
+                    <div><h3 id="python-exp-2">PyQt5</h3></div>
+                    <div><h3 id="python-exp-3">Telegram API</h3></div>
                 </div>
                 <div class="subsection">
-                    <h2 class="subsection-header">Projects</h2>
+                    <h2 class="subsection-header" id="python-proj-title">Projects</h2>
                     <a href="project.html?id=airsoft_app">
-                        <h3>Airsoft Community App</h3>
-                        <p>
+                        <h3 id="python-proj-airsoft">Airsoft Community App</h3>
+                        <p id="python-proj-airsoft-text">
                             A PyQt5 application designed to streamline the organization of airsoft games. Includes
-                            player
-                            and organizer profiles, team creation and game management
+                            player and organizer profiles, team creation and game management
                         </p>
                     </a>
-
                 </div>
             </div>
         </div>
@@ -179,13 +156,13 @@
     <section class="section-1-column" id="java">
         <div class="section-heading">
             <span class="line-1"></span>
-            <span class="heading-text">JAVA</span>
+            <span class="heading-text" id="heading-java">JAVA</span>
             <span class="line-2"></span>
         </div>
         <div class="column">
             <div class="subsection">
-                <h2 class="subsection-header">About</h2>
-                <h3>
+                <h2 class="subsection-header" id="java-about-title">About</h2>
+                <h3 id="java-about-text">
                     Java is a widely-used, object-oriented programming language and software platform developed by Sun
                     Microsystems (now owned by Oracle). It is known for its "write once, run anywhere" (WORA) principle,
                     which allows compiled Java code (bytecode) to run on any device with a Java Virtual Machine (JVM)
@@ -194,21 +171,18 @@
             </div>
             <div class="section-columns">
                 <div class="subsection">
-                    <h2 class="subsection-header">Experience</h2>
-                    <div>
-                        <h3>Swing</h3>
-                    </div>
+                    <h2 class="subsection-header" id="java-exp-title">Experience</h2>
+                    <div><h3 id="java-exp-1">Swing</h3></div>
                 </div>
                 <div class="subsection">
-                    <h2 class="subsection-header">Projects</h2>
+                    <h2 class="subsection-header" id="java-proj-title">Projects</h2>
                     <a href="project.html?id=java3d">
-                        <h3>3D Game</h3>
-                        <p>
+                        <h3 id="java-proj-3d">3D Game</h3>
+                        <p id="java-proj-3d-text">
                             A first-person game written in Java using Swing. Renders 3D graphics on CPU only, without
                             external rendering libraries
                         </p>
                     </a>
-
                 </div>
             </div>
         </div>
